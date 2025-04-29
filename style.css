@@ -42,3 +42,41 @@ footer {
     font-size: 0.9rem;
     color: #888;
 }
+
+/* Prosjektseksjon */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Bokser */
+.project-box {
+    display: block;
+    background-color: #1f1f1f;
+    padding: 1.8rem;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #ffffff;
+    text-decoration: none;
+    /* Fjern understrek */
+    font-weight: 700;
+    /* Fet tekst */
+    font-size: 1.2rem;
+    /* Litt mindre enn overskrift */
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    /* Litt glow */
+}
+
+/* Hover-effekt */
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(138, 180, 248, 0.6);
+    cursor: pointer;
+}
