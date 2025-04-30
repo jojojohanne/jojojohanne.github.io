@@ -12,6 +12,15 @@ body {
     text-align: center;
 }
 
+/* Overskrift til framside */
+header h1 {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-shadow: 0 0 10px #8195a3;
+    margin-bottom: 1.5rem;
+}
+
 /* Innholdsboks */
 .container {
     padding: 3rem;
@@ -25,13 +34,6 @@ body {
 }
 
 
-/* Overskrift */
-header h1 {
-    font-size: 2.8rem;
-    color: #ffffff;
-    text-shadow: 0 0 10px #3f4c60;
-    margin-bottom: 1.5rem;
-}
 
 /* Avsnitt */
 main p {
