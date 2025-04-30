@@ -13,8 +13,6 @@ body {
     min-height: 100vh;
 }
 
-
-
 /* Overskrift til framside */
 header h1 {
     font-family: 'Satoshi', sans-serif;
@@ -27,20 +25,20 @@ header h1 {
 /* Innholdsboks */
 .container {
     padding: 3rem;
-    background-color: rgba(30, 30, 30, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    width: 100%;
-    max-width: 1000px;
-    /* Økt fra 600px */
-    box-sizing: border-box;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #1f1b26, #413c47);
+    /* gradient grå-lilla */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 /* stilene her gjelder bare for elementer med class="headline" */
 .headline {
-    font-family: 'Satoshi', sans-serif;
-    font-size: 3.6rem;
-    /* Øk denne verdien fra f.eks. 2.8rem */
+    font-family: 'BeVietnamPro', sans-serif;
+    font-size: 5rem;
+    /* Ca. 80 px */
     font-weight: 700;
     background: linear-gradient(135deg, #a074f8, #d5bfff);
     -webkit-background-clip: text;
@@ -51,7 +49,7 @@ header h1 {
 
 /* Avsnitt */
 main p {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'BeVietnamPro', sans-serif;
     font-size: 1.2rem;
     color: #e0e0e0;
     margin: 0.8rem 0;
@@ -182,6 +180,28 @@ footer {
 }
 
 .github-icon:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Instagram logo */
+.instagram-icon {
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    /* justert avstand fra venstrekant */
+    z-index: 10;
+}
+
+.instagram-icon img {
+    width: 36px;
+    height: 36px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 0 5px rgba(160, 116, 248, 0.3));
+}
+
+.instagram-icon:hover img {
     opacity: 1;
     transform: scale(1.1);
 }
