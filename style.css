@@ -2,15 +2,18 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-    color: #f5f5f5;
+    background-color: #15111e;
+    /* mørk lilla-grå */
+    color: #ffffff;
+    font-family: 'Satoshi', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
+
+
 
 /* Overskrift til framside */
 header h1 {
@@ -33,10 +36,22 @@ header h1 {
     box-sizing: border-box;
 }
 
+/* stilene her gjelder bare for elementer med class="headline" */
+.headline {
+    font-family: 'Satoshi', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a074f8, #d5bfff);
+    /* lilla → lys lilla */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(160, 116, 248, 0.3);
+}
 
 
 /* Avsnitt */
 main p {
+    font-family: 'Satoshi', sans-serif;
     font-size: 1.2rem;
     color: #e0e0e0;
     margin: 0.8rem 0;
@@ -68,35 +83,29 @@ footer {
     margin-top: 3rem;
 }
 
-
-
 /* Bokser */
 .project-box {
     display: block;
-    background-color: #1f1f1f;
+    background-color: #2d1b47;
+    /* lysere lilla-tonet boks */
     padding: 1.8rem;
-    border-radius: 10px;
-    width: 250px;
-    flex-shrink: 0;
+    border-radius: 12px;
+    width: 240px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
     text-decoration: none;
-    /* Fjern understrek */
-    font-weight: 700;
-    /* Fet tekst */
-    font-size: 1.2rem;
-    /* Litt mindre enn overskrift */
-    letter-spacing: 0.5px;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
-    /* Litt glow */
+    transition: background 0.2s ease, transform 0.2s ease;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Hover-effekt */
+/* Hoved effekt til bokser */
 .project-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(138, 180, 248, 0.6);
+    background-color: #3a2460;
+    /* litt lysere hover-farge */
+    transform: translateY(-4px);
     cursor: pointer;
 }
 
@@ -131,4 +140,26 @@ footer {
 /* Header - mine prosjekter overskrift */
 .topnav a:hover {
     background-color: #444;
+}
+
+/* LinkedIn */
+.linkedin-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    display: inline-block;
+}
+
+.linkedin-icon img {
+    width: 36px;
+    height: 36px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 0 5px rgba(160, 116, 248, 0.3));
+}
+
+.linkedin-icon:hover img {
+    opacity: 1;
+    transform: scale(1.1);
 }
