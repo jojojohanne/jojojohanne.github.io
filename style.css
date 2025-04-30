@@ -39,10 +39,10 @@ header h1 {
 /* stilene her gjelder bare for elementer med class="headline" */
 .headline {
     font-family: 'Satoshi', sans-serif;
-    font-size: 2.8rem;
+    font-size: 3.6rem;
+    /* Øk denne verdien fra f.eks. 2.8rem */
     font-weight: 700;
     background: linear-gradient(135deg, #a074f8, #d5bfff);
-    /* lilla → lys lilla */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 15px rgba(160, 116, 248, 0.3);
@@ -142,7 +142,7 @@ footer {
     background-color: #444;
 }
 
-/* LinkedIn */
+/* LinkedIn logo */
 .linkedin-icon {
     position: absolute;
     top: 20px;
@@ -160,6 +160,28 @@ footer {
 }
 
 .linkedin-icon:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* GitHub logo */
+.github-icon {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    /* juster avstand fra LinkedIn */
+    z-index: 10;
+}
+
+.github-icon img {
+    width: 36px;
+    height: 36px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    filter: drop-shadow(0 0 5px rgba(160, 116, 248, 0.3));
+}
+
+.github-icon:hover img {
     opacity: 1;
     transform: scale(1.1);
 }
