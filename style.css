@@ -18,8 +18,12 @@ body {
     background-color: rgba(30, 30, 30, 0.85);
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    max-width: 600px;
+    width: 100%;
+    max-width: 1000px;
+    /* Økt fra 600px */
+    box-sizing: border-box;
 }
+
 
 /* Overskrift */
 header h1 {
@@ -57,9 +61,11 @@ footer {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    /* Viktig for små skjermer */
     gap: 1.5rem;
     margin-top: 3rem;
 }
+
 
 
 /* Bokser */
@@ -68,7 +74,8 @@ footer {
     background-color: #1f1f1f;
     padding: 1.8rem;
     border-radius: 10px;
-    width: 260px;
+    width: 250px;
+    flex-shrink: 0;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
