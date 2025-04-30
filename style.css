@@ -52,6 +52,16 @@ footer {
     margin-top: 3rem;
 }
 
+.projects-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+
 /* Bokser */
 .project-box {
     display: block;
@@ -79,4 +89,37 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 0 15px rgba(138, 180, 248, 0.6);
     cursor: pointer;
+}
+
+.projects-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Header - mine prosjekter overskrift */
+.topnav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Header - mine prosjekter overskrift */
+.topnav a {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+/* Header - mine prosjekter overskrift */
+.topnav a:hover {
+    background-color: #444;
 }
